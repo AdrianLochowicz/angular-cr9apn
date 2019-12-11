@@ -9,7 +9,7 @@ import { Wydatek, KATEGORIE } from './wydatek';
 })
 
 export class AppComponent implements OnInit {
-  name = 'Angular';
+ // name = 'Angular';
 
     wydatki: Wydatek[];
 ngOnInit() {
