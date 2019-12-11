@@ -9,6 +9,6 @@ import { AppComponent } from './app.component';
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [WydatkiService]
+//providers: [WydatkiService]
 })
 export class AppModule { }
