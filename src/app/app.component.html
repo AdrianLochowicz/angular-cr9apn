@@ -15,14 +15,11 @@
         <th>km / litrow</th>
     </tr>
 
-</table>
 <tr *ngFor="let wydatek of wydatki">
     <td>{{wydatek.kategoria}}</td>
-    <td>{{wydatek.data}}</td>
-    <td>{{wydatek.kwota}} zł</td>
+<td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
+<td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
     <td>{{wydatek.opis}}</td>
      <td>{{wydatek.ileKm}} km / {{wydatek.ileLitrow}} l</td>
 </tr>
-<td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
-<td>{{wydatek.kwota | number:'1.2-2'}} zł</td>
-<td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
+</table>
