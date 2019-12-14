@@ -14,13 +14,12 @@ export class AppComponent implements OnInit {
     wydatki: Wydatek[];
 ngOnInit() {
     this.wydatki = [
-        new Wydatek('Tankowanie', 252.43, '', new Date(2018, 4, 30)),
+        new Wydatek('Tankowanie', 252.43, '', new Date(2018, 4, 30),48.0, 527.5),
         new Wydatek('Myjnia', 75, '', new Date(2018, 4, 2)),
         new Wydatek('Serwis', 1250, 'Klocki, rozrząd i parę drobiazgów', new Date(2018, 3, 16)),
         new Wydatek('Inne', 315.50, 'Różowe futerko na kierownicę', new Date(2018, 3, 16)),
-        new Wydatek('Tankowanie', 325.20, 'Do pełna po urlopie', new Date(2017, 7, 12)), 
-        new Wydatek('Tankowanie',285, 'pierwszy wpis', new Date(2017, 7, 12), 18, 5),
-        new Wydatek('Tankowanie',285, 'pierwszy wpis', new Date(2017, 7, 12), 9, 13)
+        new Wydatek('Tankowanie', 325.20, 'Do pełna po urlopie', new Date(2017, 7, 12), 527, ''), 
+        new Wydatek('Tankowanie',285, 'drugi wpis', new Date(2017, 7, 12), '', 35.0)
     ];
 }
 }
