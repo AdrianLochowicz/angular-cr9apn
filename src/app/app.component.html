@@ -1,11 +1,8 @@
 <div class="container">
-  <h1>
-    AutoKsiegowy
-  </h1>
-
+  <h1> AutoKsiegowy</h1>
   <h2>Lista wydatków</h2>
-  
 </div>
+
 <table class="table">
     <tr>
         <th>Kategoria</th>
@@ -20,6 +17,6 @@
 <td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
 <td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
     <td>{{wydatek.opis}}</td>
-     <td>{{wydatek.ileKm}} km / {{wydatek.ileLitrow}} l</td>
+  <td>{{wydatek.ileKm}} km / {{wydatek.ileLitrow}} l</td>
 </tr>
 </table>
