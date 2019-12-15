@@ -17,7 +17,7 @@
 <td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
 <td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
    <td>{{wydatek.opis}}</td>
-  <span *ngIf="wydatek.kategorai=='Tankowanie'">
+  <span *ngIf="wydatek.kategoria=='Tankowanie'">
   <td> <span *ngIf = "wydatek.ileKm"> {{wydatek.ileKm}} km </span> 
   <span *ngIf ="wydatek.ileKm && wydatek.ileLitrow"> / </span> 
   <span *ngIf ="wydatek.ileLitrow"> {{wydatek.ileLitrow}} l </span> 
