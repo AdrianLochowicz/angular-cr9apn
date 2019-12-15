@@ -17,6 +17,6 @@
 <td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
 <td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
     <td>{{wydatek.opis}}</td>
-  <td> <span *ntgIf = "wydatek.ileKm"> {{wydatek.ileKm}} km </span> <span *ntgIf ="wydatek.ileKm && wydatek.ileLitrow"> / </span> <span *ntgIf ="wydatek.ileLitrow"> {{wydatek.ileLitrow}} l </span> </td>
+  <td> <span *ntgIf = "wydatek.ileKm"> {{wydatek.ileKm}} km </span> <span *ntgIf ="wydatek.ileKm && wydatek.ileLitrow"> / </span> <span *ntgIf ="wydatek.ileLitrow"> {{wydatek.ileLitrow}} l </span> </td> </span>
 </tr>
 </table>
