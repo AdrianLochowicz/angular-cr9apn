@@ -3,7 +3,7 @@
   <h2>Lista wydatków</h2>
 </div>
 
-<table class="table">
+<table class="table table-striped">
     <tr>
         <th>Kategoria</th>
         <th>Data</th>
@@ -17,11 +17,12 @@
 <td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
 <td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
    <td>{{wydatek.opis}}</td>
+    <td> 
   <span *ngIf="wydatek.kategoria=='Tankowanie'">
-  <td> <span *ngIf = "wydatek.ileKm"> {{wydatek.ileKm}} km </span> 
+ <span *ngIf = "wydatek.ileKm"> {{wydatek.ileKm}} km </span> 
   <span *ngIf ="wydatek.ileKm && wydatek.ileLitrow"> / </span> 
   <span *ngIf ="wydatek.ileLitrow"> {{wydatek.ileLitrow}} l </span> 
-  </td> 
   </span>
+  </td> 
 </tr>
 </table>
