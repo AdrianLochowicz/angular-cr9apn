@@ -14,4 +14,5 @@ export const KATEGORIE = [ 'Tankowanie', 'Myjnia', 'Serwis', 'Inne' ];
 export class Wydatek {
   constructor(
     public id: number,{}
+  )
 }

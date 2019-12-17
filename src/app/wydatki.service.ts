@@ -15,8 +15,7 @@ export class WydatkiService {
       new Wydatek('Tankowanie', 325.20, 'Do pełna po urlopie', new Date(2017, 7, 12), 527, 48)
     ];
   }
-}
-getWydatki() {
+  getWydatki() {
     return this.wydatki;
   }
    getKategorie(): string[] {
@@ -24,9 +23,10 @@ getWydatki() {
   }
    dodajWydatek(nowyWydatek: Wydatek): void {
     this.wydatki.push(nowyWydatek);
-        this.nextId = 7;
-
+      this.nextId = 7;
   }
+}
+
   this.wydatki = [
       new Wydatek(1, 'Tankowanie', 252.43, '', new Date(2018, 4, 30), 527.5, 48),
       new Wydatek(2, 'Myjnia', 75, '', new Date(2018, 4, 2)),

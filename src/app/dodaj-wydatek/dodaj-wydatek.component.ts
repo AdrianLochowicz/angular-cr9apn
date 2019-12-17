@@ -24,4 +24,3 @@ constructor(private wydatkiService: WydatkiService) { }
       this.router.navigate(['/wydatki']);
       this.nowyWydatek = new Wydatek(null, 'Tankowanie', null, null, null);
   }
-  
