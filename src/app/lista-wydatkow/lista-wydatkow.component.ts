@@ -14,3 +14,6 @@ constructor(private wydatkiService: WydatkiService) { }
     this.wydatki = this.wydatkiService.getWydatki();
   }
 }
+usunWydatek(id: number) {
+    this.wydatkiService.usunWydatek(id);
+  }
