@@ -4,15 +4,15 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DodajWydatekComponent } from './dodaj-wydatek/dodaj-wydatek.component';
-//import { ListaWydatkowService } from './lista-wydatkow.service';
-//import { WydatkiService } from './wydatki.service';
+import { ListaWydatkowService } from './lista-wydatkow.service';
+import { WydatkiService } from './wydatki.service';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, DodajWydatekComponent ],
   bootstrap:    [ AppComponent ],
-//providers: [ListaWydatkowService],
-//providers: [WydatkiService]
+providers: [ListaWydatkowService],
+providers: [WydatkiService]
 })
 export class AppModule { }
 
