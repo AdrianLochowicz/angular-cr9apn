@@ -10,8 +10,7 @@ import { Router } from '@angular/router';
 })
 export class DodajWydatekComponent implements OnInit {
  nowyWydatek: Wydatek;
-  constructor() { }
-
+  
 kategorie: string[];
 
 constructor(private wydatkiService: WydatkiService) { }
@@ -24,7 +23,5 @@ constructor(private wydatkiService: WydatkiService) { }
     this.wydatkiService.dodajWydatek(this.nowyWydatek);
       this.router.navigate(['/wydatki']);
   }
-  }
-}
+  
 this.nowyWydatek = new Wydatek(null, 'Tankowanie', null, null, null);
-
