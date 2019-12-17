@@ -22,6 +22,6 @@ constructor(private wydatkiService: WydatkiService) { }
   onSubmit() {
     this.wydatkiService.dodajWydatek(this.nowyWydatek);
       this.router.navigate(['/wydatki']);
+      this.nowyWydatek = new Wydatek(null, 'Tankowanie', null, null, null);
   }
   
-this.nowyWydatek = new Wydatek(null, 'Tankowanie', null, null, null);
