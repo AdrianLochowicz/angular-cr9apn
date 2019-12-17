@@ -1,7 +1,0 @@
-<th></th>
-<<<<<<< HEAD
-<td>
-        <button class="btn btn-danger" (click)="usunWydatek(wydatek.id)">Usuń</button>
-      </td>
-=======
->>>>>>> 5b21067205b5fc22ff195b724fbb5ae4f20a4bd1
