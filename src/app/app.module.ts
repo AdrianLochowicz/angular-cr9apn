@@ -8,11 +8,11 @@ import { ListaWydatkowService } from './lista-wydatkow.service';
 import { WydatkiService } from './wydatki.service';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, DodajWydatekComponent ],
+  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
+  declarations: [ AppComponent, ListaWydatkowComponent, DodajWydatekComponent ],
   bootstrap:    [ AppComponent ],
 providers: [ListaWydatkowService],
-providers: [WydatkiService]
+  providers: [ WydatkiService ]
 })
 export class AppModule { }
 
@@ -24,10 +24,3 @@ const appRoutes: Routes = [
     pathMatch: 'full'
   }
 ];
-@NgModule({
-  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
-  declarations: [ AppComponent, ListaWydatkowComponent, DodajWydatekComponent ],
-  bootstrap:    [ AppComponent ],
-  providers: [ WydatkiService ]
-})
-export class AppModule { }

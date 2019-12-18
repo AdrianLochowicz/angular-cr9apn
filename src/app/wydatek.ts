@@ -1,6 +1,6 @@
 export class Wydatek {
-
-    constructor(
+  constructor(
+    public id: number,
         public kategoria: string,
         public kwota: number,
         public opis: string,
