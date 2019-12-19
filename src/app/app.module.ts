@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { DodajWydatekComponent } from './dodaj-wydatek/dodaj-wydatek.component';
 import { ListaWydatkowService } from './lista-wydatkow.service';
+import { ListaWydatkowComponent } from './lista-wydatkow/lista-wydatkow.component';
 import { WydatkiService } from './wydatki.service';
 
 @NgModule({

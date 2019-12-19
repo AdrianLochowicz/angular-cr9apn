@@ -1,3 +1,4 @@
+export const KATEGORIE = [ 'Tankowanie', 'Myjnia', 'Serwis', 'Inne' ];
 export class Wydatek {
   constructor(
     public id: number,
@@ -9,10 +10,4 @@ export class Wydatek {
         public ileLitrow?: number,
         ) {
     }
-}
-export const KATEGORIE = [ 'Tankowanie', 'Myjnia', 'Serwis', 'Inne' ];
-export class Wydatek {
-  constructor(
-    public id: number,{}
-  )
 }

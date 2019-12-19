@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { WydatkiService } from '../wydatki.service';
+import { WydatkiService } from './wydatki.service';
 @Injectable()
 export class ListaWydatkowService {
 
