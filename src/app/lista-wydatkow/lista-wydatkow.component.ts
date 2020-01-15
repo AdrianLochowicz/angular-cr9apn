@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Wydatek, KATEGORIE } from '../app/Wydatek';
-import { WydatkiService } from '../app/wydatki.service';
+import { WydatkiService } from '../wydatki.service';
 
 @Component({
   selector: 'app-lista-wydatkow',
