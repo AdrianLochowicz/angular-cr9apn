@@ -21,6 +21,6 @@ const appRoutes: Routes = [
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
   declarations: [ AppComponent, ListaWydatkowComponent, DodajWydatekComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [ListaWydatkowService,WydatkiService ]
+  providers: [ListaWydatkowService, WydatkiService ]
 })
 export class AppModule { }
