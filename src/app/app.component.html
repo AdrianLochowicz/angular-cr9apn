@@ -6,29 +6,5 @@
     <a routerLink="/wydatki">Lista wydatków</a> |
     <a routerLink="/dodaj">Dodaj wydatek</a>
   </p>
-<table class="table table-striped">
-    <tr>
-        <th>Kategoria</th>
-        <th>Data</th>
-        <th>Kwota</th>
-        <th>Opis</th>
-        <th>km / litrow</th>
-    </tr>
-
-<tr *ngFor="let wydatek of wydatki">
-    <td>{{wydatek.kategoria}}</td>
-<td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
-<td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
-   <td>{{wydatek.opis}}</td>
-    <td> 
-  <span *ngIf="wydatek.kategoria=='Tankowanie'">
- <span *ngIf = "wydatek.ileKm"> {{wydatek.ileKm}} km </span> 
-  <span *ngIf ="wydatek.ileKm && wydatek.ileLitrow"> / </span> 
-  <span *ngIf ="wydatek.ileLitrow"> {{wydatek.ileLitrow}} l </span> 
-  </span>
-  </td> 
-</tr>
-</table>
+<router-outlet></router-outlet>
 <app-dodaj-wydatek></app-dodaj-wydatek>
-  <router-outlet></router-outlet>
- 
