@@ -1,6 +1,6 @@
 <h2>Dodaj wydatek</h2>
 
-<form>
+<form (ngSubmit)="onSubmit()" #wydatekForm="ngForm">
   <div class="row">
     <div class="col">
       <label>Kategoria:</label>
@@ -17,8 +17,7 @@
       <input class="form-control" name="data" type="date" required>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
+<div class="row" *ngIf="nowyWydatek.kategoria=='Tankowanie'">    <div class="col">
       <label>Przebieg:</label>
       <input class="form-control" name="ileKm" type="number">
     </div>
@@ -36,5 +35,3 @@
 </form>
 
 
-<form (ngSubmit)="onSubmit()" #wydatekForm="ngForm">
-<div class="row" *ngIf="nowyWydatek.kategoria=='Tankowanie'">
