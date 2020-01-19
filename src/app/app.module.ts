@@ -8,15 +8,6 @@ import { ListaWydatkowService } from './lista-wydatkow.service';
 import { ListaWydatkowComponent } from './lista-wydatkow/lista-wydatkow.component';
 import { WydatkiService } from './wydatki.service';
 
-@NgModule({
-  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
-  declarations: [ AppComponent, ListaWydatkowComponent, DodajWydatekComponent ],
-  bootstrap:    [ AppComponent ],
-providers: [ListaWydatkowService],
-  providers: [ WydatkiService ]
-})
-export class AppModule { }
-
 const appRoutes: Routes = [
   { path: 'wydatki', component: ListaWydatkowComponent },
   { path: 'dodaj', component: DodajWydatekComponent },
@@ -25,3 +16,11 @@ const appRoutes: Routes = [
     pathMatch: 'full'
   }
 ];
+
+@NgModule({
+  imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(appRoutes) ],
+  declarations: [ AppComponent, ListaWydatkowComponent, DodajWydatekComponent ],
+  bootstrap:    [ AppComponent ],
+  providers: [ListaWydatkowService, ],
+})
+export class AppModule { }
