@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Wydatek, KATEGORIE } from '../app/Wydatek';
+import { Wydatek, KATEGORIE } from './app/Wydatek';
 import { WydatkiService } from '../wydatki.service';
 
 @Component({
