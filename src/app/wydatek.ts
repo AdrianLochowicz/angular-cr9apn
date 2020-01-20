@@ -8,6 +8,6 @@ export class Wydatek {
         public data: Date,
         public ileKm?: number,
         public ileLitrow?: number,
-        ) {
-    }
+        )
+   { }
 }
