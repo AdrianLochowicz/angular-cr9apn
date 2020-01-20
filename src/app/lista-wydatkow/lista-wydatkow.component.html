@@ -1,4 +1,5 @@
-<table class="table">
+ <h2>Lista wydatków</h2>
+   <table class="table">
     <tr>
         <th>Kategoria</th>
         <th>Data</th>
@@ -17,8 +18,8 @@
       <span *ngIf="wydatek.kategoria=='Tankowanie'&& wydatek.ileLitrow && !wydatek.ileKm" class="text-sm-right">{{wydatek.ileLitrow | number:'1.1-1'}} l </span>
        <span *ngIf="wydatek.kategoria=='Tankowanie'&& wydatek.ileLitrow && wydatek.ileKm"   class="text-sm-right"> {{wydatek.ileLitrow | number:'1.1-1'}} l /{{wydatek.ileKm}} km</span> 
       <span *ngIf="wydatek.kategoria=='Tankowanie' && !wydatek.ileLitrow && wydatek.ileKm"  class="text-sm-right"> {{wydatek.ileKm }} km </span> </td>
-    <td>
+      <td>
         <button class="btn btn-danger" (click)="usunWydatek(wydatek.id)">Usuń</button>
-    </td>
+      </td>
 </tr>
 </table>
