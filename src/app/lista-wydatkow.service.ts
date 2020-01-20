@@ -8,4 +8,3 @@ ngOnInit() {
     this.wydatki = this.wydatkiService.getWydatki();
   }
 }
-
