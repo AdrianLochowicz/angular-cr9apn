@@ -1,7 +1,7 @@
 <h1>suma wydatkow</h1>
 
 <tr *ngFor="let wydatek of wydatki">
-  <td class="text-sm-right">{{wydatek.kwota | numebr:'1.2-2'}} zl</td>
+  <td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zl</td>
   </tr>
   <tr>
     <td><b>Suma: {{getSuma('newInput' | currency: symbol:'')}} zl </b></td>
