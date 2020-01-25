@@ -26,12 +26,14 @@ return suma;
 }
 getSumazKategori(category): number
 {
+let suma = 0;
 for (let i = 0; i < this.wydatki.length; i++)
+{
 if(this.wydatki[i].kategoria == category)
 {suma += this.wydatki[i].kwota;}
 }
-}
 return suma;
+}
 getWydatkizBierzacegomiesiaca()
 {
   let suma = [];
@@ -40,6 +42,5 @@ getWydatkizBierzacegomiesiaca()
     if(this.wydatki[i].data == '19.01.2020')
     {return this.wydatki[i].kwota;}
   }
-}
 }
 }
