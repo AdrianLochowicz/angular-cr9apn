@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Wydatek, KATEGORIE } from '../Wydatek';
+import { Wydatek, KATEGORIE } from './app/Wydatek';
 import { WydatkiService } from '../wydatki.service';
 
 @Component({

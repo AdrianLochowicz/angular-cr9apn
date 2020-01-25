@@ -13,7 +13,7 @@ import { SumawydatkowComponent } from './sumawydatkow/sumawydatkow.component';
 const appRoutes: Routes = [
   { path: 'wydatki', component: ListaWydatkowComponent },
   { path: 'dodaj', component: DodajWydatekComponent },
-  { path: 'suma', component: SumaWydatkowComponent },
+  { path: 'suma', component: SumawydatkowComponent },
   { path: '', redirectTo: '/wydatki', pathMatch: 'full'}
 ];
 
