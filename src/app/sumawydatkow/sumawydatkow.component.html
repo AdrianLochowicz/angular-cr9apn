@@ -1,0 +1,27 @@
+<h1>suma wydatkow</h1>
+
+<tr *nfFor="let wydatek of wydatki">
+  <td class="text-sm-right">{{wydatek.kwota | numer:'1.2-2'}} zl</td>
+  </tr>
+  <tr>
+    <td><b>Suma: {{getSuma('newInput' | currency: symbol:'')}} zl </b></td>
+    </tr>
+    <tr>
+      <td><b>suma za myjnie: {{getSumazKategori('myjnia') | currency: symbol:'')}} zl </b></td><br>
+      </tr>
+      <tr>
+       <td><b>suma za tankowanie: {{getSumazKategori('tankowanie') | currency: symbol:'')}} zl </b></td><br>
+       </tr>
+       <tr>
+       <td><b>suma za serwis: {{getSumazKategori('serwis') | currency: symbol:'')}} zl </b></td><br>
+       </tr>
+       <tr>
+       <td><b>suma inne: {{getSumazKategori('inne') | currency: symbol:'')}} zl </b></td><br>
+       </tr>
+       <tr>
+         <td>
+           <button class="btn btn" style="background:blue; color:white;"(click)="pelnestatystyki(wydatek.id)"> pelne statystyki</button> &nbsp;
+           <button class="btn btn" style="background:blue; color:white;"(click)="zdanegomiesiaca(wydatek.ik)"> zdanego miesiaca</button>
+           </td>
+
+           </tr>
