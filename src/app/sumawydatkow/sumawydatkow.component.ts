@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Wydatek, KATEGORIE } from '../Wydatek';
-import { WydatkiService } from './wydatki.service';
+import { WydatkiService } from '../wydatki.service';
 
 @Component({
   selector: 'app-sumawydatkow',
