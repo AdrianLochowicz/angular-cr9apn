@@ -1,8 +1,5 @@
 <h1>suma wydatkow</h1>
 
-<tr *ngFor="let wydatek of wydatki">
-  <td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zl</td>
-  </tr>
   <tr>
     <td><b>Suma: {{getSuma('newInput') | currency: symbol:''}} zl </b></td>
     </tr>
@@ -18,10 +15,9 @@
        <tr>
        <td><b>suma inne: {{getSumazKategori('inne') | currency: symbol:''}} zl </b></td>
        </tr>
-       <td><b>kwota: {{getWydatkizBierzacegomiesiaca()}}</b></td>
-       <tr>
+       
          <td>
-           <button class="btn btn" style="background:blue; color:white;"(click)="pelnestatystyki(wydatek.id)"> pelne statystyki</button> &nbsp;
-           <button class="btn btn" style="background:blue; color:white;"(click)="zdanegomiesiaca(wydatek.ik)"> zdanego miesiaca</button><br>
-           </td>
-           </tr>
+         <button class="btn btn" style="background:blue; color:white;" (click)="showAll()">Pełne statystyki</button> &nbsp;
+         <button class="btn btn" style="background:blue; color:white" (click)="showBiezacyMiesiac()">Z danego miesiąca</button>
+         </td>
+   
