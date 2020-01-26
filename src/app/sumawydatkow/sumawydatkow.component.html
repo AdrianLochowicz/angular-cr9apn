@@ -4,19 +4,19 @@
   <td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zl</td>
   </tr>
   <tr>
-    <td><b>Suma: {{getSuma('newInput' | currency: symbol:'')}} zl </b></td>
+    <td><b>Suma: {{getSuma('newInput') | currency: symbol:''}} zl </b></td>
     </tr>
     <tr>
-      <td><b>suma za myjnie: {{getSumazKategori('myjnia') | currency: symbol:'')}} zl </b></td><br>
+      <td><b>suma za myjnie: {{getSumazKategori('myjnia') | currency: symbol:''}} zl </b></td><br>
       </tr>
       <tr>
-       <td><b>suma za tankowanie: {{getSumazKategori('tankowanie') | currency: symbol:'')}} zl </b></td><br>
+       <td><b>suma za tankowanie: {{getSumazKategori('tankowanie') | currency: symbol:''}} zl </b></td><br>
        </tr>
        <tr>
-       <td><b>suma za serwis: {{getSumazKategori('serwis') | currency: symbol:'')}} zl </b></td><br>
+       <td><b>suma za serwis: {{getSumazKategori('serwis') | currency: symbol:''}} zl </b></td><br>
        </tr>
        <tr>
-       <td><b>suma inne: {{getSumazKategori('inne') | currency: symbol:'')}} zl </b></td><br>
+       <td><b>suma inne: {{getSumazKategori('inne') | currency: symbol:''}} zl </b></td><br>
        </tr>
        <tr>
          <td>
