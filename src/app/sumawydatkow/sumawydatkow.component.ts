@@ -36,7 +36,7 @@ return suma;
 }
 getWydatkizBierzacegomiesiaca()
 {
-  let suma = [];
+  let suma = 0;
   for (let i = 0; i < this.wydatki.length; i++)
   {
     if(this.wydatki[i].data == '19.01.2020')
