@@ -1,5 +1,7 @@
 <h1>suma wydatkow</h1>
 
+<span *ngIf = "sw == 1">
+
 <tr>
 	<td><b>Suma: {{getSuma('newInput') | currency: symbol:''}} zl </b></td>
 </tr>
@@ -16,9 +18,31 @@
 	<td><b>suma inne: {{getSumazKategori('Inne') | currency: symbol:''}} zl </b></td>
 </tr>
 
+</span>
+
+<span *ngIf = "sw == 0">
+
+<tr>
+	<td><b>Suma: {{getSumazKategoriMiesiac2() | currency: symbol:''}} zl </b></td>
+</tr>
+<tr>
+	<td><b>suma za myjnie: {{getSumazKategoriMiesiac('Myjnia') | currency: symbol:''}} zl </b></td>
+</tr>
+<tr>
+	<td><b>suma za tankowanie: {{getSumazKategoriMiesiac('Tankowanie') | currency: symbol:''}} zl </b></td>
+</tr>
+<tr>
+	<td><b>suma za serwis: {{getSumazKategoriMiesiac('Serwis') | currency: symbol:''}} zl </b></td>
+</tr>
+<tr>
+	<td><b>suma inne: {{getSumazKategoriMiesiac('Inne') | currency: symbol:''}} zl </b></td>
+</tr>
+
+</span>
+
 <td>
-	<button class="btn btn" style="background:blue; color:white;" (click)="showFull()">Pełne statystyki</button> &nbsp;
-	<button class="btn btn" style="background:blue; color:white" (click)="showCurrentMonth()">Z danego miesiąca</button>
+	<button class="btn btn" style="background:blue; color:white;" (click)="showFull(0)">Pełne statystyki</button> &nbsp;
+	<button class="btn btn" style="background:blue; color:white" (click)="showCurrentMonth(1)">Z danego miesiąca</button>
 </td>
 
 <div style="display:none" id="CurrentMonth">
