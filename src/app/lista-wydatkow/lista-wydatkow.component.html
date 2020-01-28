@@ -1,25 +1,26 @@
- <h2>Lista wydatków</h2>
-   <table class="table">
-    <tr>
-        <th>Kategoria</th>
-        <th>Data</th>
-        <th>Kwota</th>
-        <th>Opis</th>
-        <th>Litrow / km</th>
-        <th></th>
-    </tr>
+<h2>Lista wydatków</h2>
+<table class="table">
+	<tr>
+		<th>Kategoria</th>
+		<th>Data</th>
+		<th>Kwota</th>
+		<th>Opis</th>
+		<th>Litrow / km</th>
+		<th></th>
+	</tr>
 
-<tr *ngFor="let wydatek of wydatki">
-    <td>{{wydatek.kategoria}}</td>
-    <td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
-<td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
-    <td>{{wydatek.opis}}</td>
-    <td> 
-      <span *ngIf="wydatek.kategoria=='Tankowanie'&& wydatek.ileLitrow && !wydatek.ileKm" class="text-sm-right">{{wydatek.ileLitrow | number:'1.1-1'}} l </span>
-       <span *ngIf="wydatek.kategoria=='Tankowanie'&& wydatek.ileLitrow && wydatek.ileKm"   class="text-sm-right"> {{wydatek.ileLitrow | number:'1.1-1'}} l /{{wydatek.ileKm}} km</span> 
-      <span *ngIf="wydatek.kategoria=='Tankowanie' && !wydatek.ileLitrow && wydatek.ileKm"  class="text-sm-right"> {{wydatek.ileKm }} km </span> </td>
-      <td>
-        <button class="btn btn-danger" (click)="usunWydatek(wydatek.id)">Usuń</button>
-      </td>
-</tr>
+	<tr *ngFor="let wydatek of wydatki">
+		<td>{{wydatek.kategoria}}</td>
+		<td>{{wydatek.data | date:'dd.MM.yyyy'}}</td>
+		<td class="text-sm-right">{{wydatek.kwota | number:'1.2-2'}} zł</td>
+		<td>{{wydatek.opis}}</td>
+		<td>
+			<span *ngIf="wydatek.kategoria=='Tankowanie'&& wydatek.ileLitrow && !wydatek.ileKm" class="text-sm-right">{{wydatek.ileLitrow | number:'1.1-1'}} l </span>
+			<span *ngIf="wydatek.kategoria=='Tankowanie'&& wydatek.ileLitrow && wydatek.ileKm"   class="text-sm-right"> {{wydatek.ileLitrow | number:'1.1-1'}} l /{{wydatek.ileKm}} km</span>
+			<span *ngIf="wydatek.kategoria=='Tankowanie' && !wydatek.ileLitrow && wydatek.ileKm"  class="text-sm-right"> {{wydatek.ileKm }} km </span>
+		</td>
+		<td>
+			<button class="btn btn-danger" (click)="usunWydatek(wydatek.id)">Usuń</button>
+		</td>
+	</tr>
 </table>

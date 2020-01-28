@@ -1,20 +1,39 @@
-import { Injectable } from '@angular/core';
-import { Wydatek, KATEGORIE } from './wydatek';
+import { Injectable } from "@angular/core";
+import { Wydatek, KATEGORIE } from "./wydatek";
 
 @Injectable()
 export class WydatkiService {
-
-  private nextId:number;
+  private nextId: number;
   private wydatki: Wydatek[];
 
   constructor() {
     this.wydatki = [
-      new Wydatek(1, 'Tankowanie', 252.43, '', new Date(2018, 1, 30), 12, 25),
-      new Wydatek(2, 'Myjnia', 75, '', new Date(2018, 0, 2), 5),
-      new Wydatek(3, 'Serwis', 1250, 'Klocki, rozrząd i parę drobiazgów', new Date(2018, 1, 16)),
-      new Wydatek(4, 'Inne', 315.50, 'Różowe futerko na kierownicę', new Date(2019, 0, 16)),
-      new Wydatek(5, 'Tankowanie', 325.20, 'Do pełna po urlopie', new Date(2020, 0, 12), 527, ''),
-      new Wydatek(6, 'Tankowanie', 257.30, '', new Date(2020, 0, 13), null, 35)
+      new Wydatek(1, "Tankowanie", 252.43, "", new Date(2018, 1, 30), 12, 25),
+      new Wydatek(2, "Myjnia", 75, "", new Date(2018, 0, 2), 5),
+      new Wydatek(
+        3,
+        "Serwis",
+        1250,
+        "Klocki, rozrząd i parę drobiazgów",
+        new Date(2018, 1, 16)
+      ),
+      new Wydatek(
+        4,
+        "Inne",
+        315.5,
+        "Różowe futerko na kierownicę",
+        new Date(2019, 0, 16)
+      ),
+      new Wydatek(
+        5,
+        "Tankowanie",
+        325.2,
+        "Do pełna po urlopie",
+        new Date(2020, 0, 12),
+        527,
+        ""
+      ),
+      new Wydatek(6, "Tankowanie", 257.3, "", new Date(2020, 0, 13), null, 35)
     ];
     this.nextId = 7;
   }
